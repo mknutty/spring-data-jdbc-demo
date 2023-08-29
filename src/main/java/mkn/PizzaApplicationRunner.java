@@ -20,6 +20,8 @@ public class PizzaApplicationRunner implements ApplicationRunner {
 	    
 	    repository.findByName("Mark's Supreme").forEach(System.out::println);
 	    repository.findByType("pepperoni").forEach(System.out::println);
+	    
+	    repository.findAllBy().forEach(System.out::println);
 	}
 
 }

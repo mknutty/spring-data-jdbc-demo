@@ -9,4 +9,6 @@ public interface PizzaRepository extends CrudRepository<Pizza, Long>, PagingAndS
 	
 	public List<Pizza> findByName(String name);
 	public List<Pizza> findByType(String type);
+	
+	public List<PizzaView> findAllBy();
 }
