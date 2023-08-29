@@ -29,6 +29,9 @@ public class PizzaApplicationRunner implements ApplicationRunner {
 	    repository.save(new Pizza().setType("supreme").setName("Mark's Supreme"));
 	    repository.save(new Pizza().setType("pepperoni").setName("Bob's Pepperoni"));
 	    repository.findAll().forEach(System.out::println);
+	    
+	    repository.findByName("Mark's Supreme").forEach(System.out::println);
+	    repository.findByType("pepperoni").forEach(System.out::println);
 	}
 
 }
