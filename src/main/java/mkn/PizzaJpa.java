@@ -17,6 +17,7 @@ import lombok.experimental.Accessors;
 @Data
 @Accessors(chain = true)
 public class PizzaJpa {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
